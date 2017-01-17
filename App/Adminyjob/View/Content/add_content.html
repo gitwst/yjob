@@ -47,9 +47,18 @@
                                             <div class="content-class">
 
                                                 <div style="position:relative;">
-                                                    <input type="text" value="请选择" readonly="readonly"  name="type_id_cn" id="type_id_cn" class="input_text_200 input_text_select valid " >
-                                                    <input name="type_id" id="type_id" type="hidden">
-                                                    <div id="menu1" class="menu"  style="display:none">
+                                                    <!--<input type="text" value="请选择" readonly="readonly"  name="type_id_cn" id="type_id_cn" class="input_text_200 input_text_select valid " >
+                                                    <input name="type_id" id="type_id" type="hidden">-->
+                                                    <select class="form-control f-input-sm alter-classify" style=" width: 200px;">
+		                                                <option value="0" selected="selected">请选择</option>
+		                                                <option value="1">简历指南</option>
+		                                                <option value="2">——面试宝典</option>
+		                                                <option value="3">——热门职业</option>
+		                                                <option value="4">最新活动</option>
+		                                                <option value="5">——职场八卦</option>
+		                                                <option value="6">————职场观察</option>
+		                                            </select>
+                                                    <!--<div id="menu1" class="menu"  style="display:none">
                                                         <ul>
                                                             <li id="1" title="资讯中心">资讯中心</li>
                                                             <li id="2" title="|-最新活动">|-最新活动</li>
@@ -64,7 +73,7 @@
                                                             <li id="14" title="活动">活动</li>
                                                         </ul>
 
-                                                    </div>
+                                                    </div>-->
                                                 </div>
                                             </div>
                                         </div>
@@ -111,14 +120,14 @@
                               <span class="fileupload-exists">
                                 <i class="fa fa-undo">
                                 </i>
-                                Change
+                                重新上传
                               </span>
                               <input type="file" class="default">
                             </span>
                                                         <a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload">
                                                             <i class="fa fa-trash">
                                                             </i>
-                                                            Remove
+                                                            删除
                                                         </a>
                                                     </div>
                                                 </div>

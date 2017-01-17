@@ -343,27 +343,8 @@
                             职位修改
                         </a>
                     </li>-->
-                    <li>
-                        <a href="<?php echo U('Position/job_class');?>">
-                            职位分类
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?php echo U('Position/dress_class');?>">
-                            地区分类
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?php echo U('Position/cms_class');?>">
-                            CMS内容分类
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?php echo U('Position/opinion_class');?>">
-                            意见分类
-                        </a>
-                    </li>
                     
+            
                 </ul>
             </li>
             <li class="sub-menu">
@@ -575,6 +556,13 @@
                     <!--微信公众号设置-->
                     <!--</a>-->
                     <!--</li>-->
+                    
+                    <li>
+                        <a href="<?php echo U('System/job_class');?>">
+                            分类管理
+                        </a>
+                    </li>
+                    
                     <li>
                         <a href="<?php echo U('System/substation_management');?>">
                             分站管理

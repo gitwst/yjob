@@ -296,30 +296,7 @@
 			        </span>
                 </a>
             </li>
-            <li class="sub-menu">
-                <a href="javascript:;">
-                    <i class="fa fa-briefcase">
-                    </i>
-                    <span>
-			          企业管理
-			        </span>
-                    <span class="label label-success span-sidebar">
-			        1
-			        </span>
-                </a>
-                <ul class="sub">
-                    <!--<li>-->
-                    <!--<a href="job_listings.html">-->
-                    <!--职位列表-->
-                    <!--</a>-->
-                    <!--</li>-->
-                    <li>
-                        <a href="<?php echo U('Business/enterprise_certification');?>">
-                            企业认证
-                        </a>
-                    </li>
-                </ul>
-            </li>
+            
             <li class="sub-menu">
                 <a href="javascript:;">
                     <i class="fa fa-briefcase">
@@ -342,27 +319,8 @@
                             职位修改
                         </a>
                     </li>-->
-                    <li>
-                        <a href="<?php echo U('Position/job_class');?>">
-                            职位分类
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?php echo U('Position/job_class');?>">
-                            地区分类
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?php echo U('Position/job_class');?>">
-                            CMS内容分类
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?php echo U('Position/job_class');?>">
-                            意见分类
-                        </a>
-                    </li>
                     
+            
                 </ul>
             </li>
             <li class="sub-menu">
@@ -395,6 +353,31 @@
                     <li>
                         <a href="<?php echo U('Member/bd_lib');?>">
                             BD列表
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li class="sub-menu">
+                <a href="javascript:;">
+                    <i class="fa fa-briefcase">
+                    </i>
+                    <span>
+			          企业管理
+			        </span>
+                    <span class="label label-success span-sidebar">
+			        1
+			        </span>
+                </a>
+                <ul class="sub">
+                    <!--<li>-->
+                    <!--<a href="job_listings.html">-->
+                    <!--职位列表-->
+                    <!--</a>-->
+                    <!--</li>-->
+                    <li>
+                        <a href="<?php echo U('Business/enterprise_certification');?>">
+                            企业认证
                         </a>
                     </li>
                 </ul>
@@ -574,6 +557,13 @@
                     <!--微信公众号设置-->
                     <!--</a>-->
                     <!--</li>-->
+                    
+                    <li>
+                        <a href="<?php echo U('System/job_class');?>">
+                            分类管理
+                        </a>
+                    </li>
+                    
                     <li>
                         <a href="<?php echo U('System/substation_management');?>">
                             分站管理
@@ -638,9 +628,18 @@
                                             <div class="content-class">
 
                                                 <div style="position:relative;">
-                                                    <input type="text" value="请选择" readonly="readonly"  name="type_id_cn" id="type_id_cn" class="input_text_200 input_text_select valid " >
-                                                    <input name="type_id" id="type_id" type="hidden">
-                                                    <div id="menu1" class="menu"  style="display:none">
+                                                    <!--<input type="text" value="请选择" readonly="readonly"  name="type_id_cn" id="type_id_cn" class="input_text_200 input_text_select valid " >
+                                                    <input name="type_id" id="type_id" type="hidden">-->
+                                                    <select class="form-control f-input-sm alter-classify" style=" width: 200px;">
+		                                                <option value="0" selected="selected">请选择</option>
+		                                                <option value="1">简历指南</option>
+		                                                <option value="2">——面试宝典</option>
+		                                                <option value="3">——热门职业</option>
+		                                                <option value="4">最新活动</option>
+		                                                <option value="5">——职场八卦</option>
+		                                                <option value="6">————职场观察</option>
+		                                            </select>
+                                                    <!--<div id="menu1" class="menu"  style="display:none">
                                                         <ul>
                                                             <li id="1" title="资讯中心">资讯中心</li>
                                                             <li id="2" title="|-最新活动">|-最新活动</li>
@@ -655,7 +654,7 @@
                                                             <li id="14" title="活动">活动</li>
                                                         </ul>
 
-                                                    </div>
+                                                    </div>-->
                                                 </div>
                                             </div>
                                         </div>
@@ -702,14 +701,14 @@
                               <span class="fileupload-exists">
                                 <i class="fa fa-undo">
                                 </i>
-                                Change
+                                重新上传
                               </span>
                               <input type="file" class="default">
                             </span>
                                                         <a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload">
                                                             <i class="fa fa-trash">
                                                             </i>
-                                                            Remove
+                                                            删除
                                                         </a>
                                                     </div>
                                                 </div>

@@ -93,10 +93,11 @@ $(function(){
             $("#test tbody").append('<tr> <td > <input type="text" class="form-control bank-input" placeholder="请输入手机号"> </td><td></td><td></td> <td></td> <td> </td><td> </td></tr>')
 
         }
-    });
-    
-//  wx
+});
 
+
+//  wx
+//分类管理
 $(".leftimg").toggle(function(){
 	$(this).parent().parent().nextAll(".wx-two").show();
     $(this).attr("src","/Public/Admin/img/left_d.gif");
@@ -105,7 +106,6 @@ $(".leftimg").toggle(function(){
 	$(this).parent().parent().nextAll(".wx-two").hide();
 	$(this).attr("src","/Public/Admin/img/left_e.gif");
 })
-
 
 
 
@@ -130,6 +130,14 @@ $(".leftimg2").toggle(function(){
 
 
 
+$(".leftimg3").toggle(function(){
+//	alert(1);
+	$(this).parent().parent().nextAll(".wx-five").show();
+	$(this).attr("src","/Public/Admin/img/left_d.gif");
+},function(){
+	$(this).parent().parent().nextAll(".wx-five").hide();
+	$(this).attr("src","/Public/Admin/img/left_e.gif");
+})
 
 
 
@@ -150,29 +158,14 @@ $(".leftimg2").toggle(function(){
 
 
 
-////一级
-//
-//$(".leftimg").toggle(function(){
-//	$(this).parent().parent().next(".Sclass_1").show();
-//},function(){
-//	$(this).parent().parent().next(".Sclass_1").hide();
-//})
-//
-////二级
-//
-//$(".leftimg1").toggle(function(){
-//	$(this).parent().parent().next().show();
-//},function(){
-//	$(this).parent().parent().next().hide();
-//})
-//
-////三级
-//
-//$(".Scclass_1").toggle(function(){
-//	$(this).next().show();
-//},function(){
-//	$(this).next().hide();
-//})
+
+
+
+
+
+
+
+
 
 
 
@@ -268,6 +261,21 @@ $(".leftimg2").toggle(function(){
             $("#checkbox_qx").prop("checked","");
         }
     });
+    
+    
+    
+    // 全选
+    $("#checkbox_qx").click(function(){
+        $("td :checkbox").prop("checked",$(this).prop("checked"));
+    });
+    $("td :checkbox").live('click',function(){
+        if($(this).prop("checked")==false){
+            $("#checkbox_qx").prop("checked","");
+        }
+    });
+
+    
+    
 
 });
 

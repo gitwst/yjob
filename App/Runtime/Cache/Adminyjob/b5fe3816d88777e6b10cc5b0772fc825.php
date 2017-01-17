@@ -295,30 +295,7 @@
 			        </span>
                 </a>
             </li>
-            <li class="sub-menu">
-                <a href="javascript:;">
-                    <i class="fa fa-briefcase">
-                    </i>
-                    <span>
-			          企业管理
-			        </span>
-                    <span class="label label-success span-sidebar">
-			        1
-			        </span>
-                </a>
-                <ul class="sub">
-                    <!--<li>-->
-                    <!--<a href="job_listings.html">-->
-                    <!--职位列表-->
-                    <!--</a>-->
-                    <!--</li>-->
-                    <li>
-                        <a href="<?php echo U('Business/enterprise_certification');?>">
-                            企业认证
-                        </a>
-                    </li>
-                </ul>
-            </li>
+            
             <li class="sub-menu">
                 <a href="javascript:;">
                     <i class="fa fa-briefcase">
@@ -341,11 +318,8 @@
                             职位修改
                         </a>
                     </li>-->
-                    <li>
-                        <a href="<?php echo U('Position/job_class');?>">
-                            职位分类
-                        </a>
-                    </li>
+                    
+            
                 </ul>
             </li>
             <li class="sub-menu">
@@ -378,6 +352,31 @@
                     <li>
                         <a href="<?php echo U('Member/bd_lib');?>">
                             BD列表
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li class="sub-menu">
+                <a href="javascript:;">
+                    <i class="fa fa-briefcase">
+                    </i>
+                    <span>
+			          企业管理
+			        </span>
+                    <span class="label label-success span-sidebar">
+			        1
+			        </span>
+                </a>
+                <ul class="sub">
+                    <!--<li>-->
+                    <!--<a href="job_listings.html">-->
+                    <!--职位列表-->
+                    <!--</a>-->
+                    <!--</li>-->
+                    <li>
+                        <a href="<?php echo U('Business/enterprise_certification');?>">
+                            企业认证
                         </a>
                     </li>
                 </ul>
@@ -557,6 +556,13 @@
                     <!--微信公众号设置-->
                     <!--</a>-->
                     <!--</li>-->
+                    
+                    <li>
+                        <a href="<?php echo U('System/job_class');?>">
+                            分类管理
+                        </a>
+                    </li>
+                    
                     <li>
                         <a href="<?php echo U('System/substation_management');?>">
                             分站管理
@@ -593,7 +599,19 @@
                                     <hr />
                                 </div>
                                 <form method="post" action="" class="form-horizontal">
-                                    <li class="personal-li">
+                                	<li class="personal-li">
+                                        <div class="personal-settings">
+                                            <div class="personal-left">
+                                                <span>注册:</span>
+                                            </div>
+                                            <div class="personal-radio">
+                                                <input type="radio" name="mobile" value="0" checked="checked">&nbsp;允许注册
+                                                <input type="radio" name="mobile" value="1">&nbsp;关闭注册
+                                            </div>
+                                        </div>
+                                    </li>
+                                   
+                                    <!--<li class="personal-li">
                                         <div class="personal-settings">
                                             <div class="personal-left">
                                                 <span>手机注册用户名前缀:</span>
@@ -602,44 +620,49 @@
                                                 <input type="text" name="" class="form-control">
                                             </div>
                                         </div>
-                                    </li>
+                                    </li>-->
 
+                                   
+                                    
                                     <li class="personal-li">
                                         <div class="personal-settings">
                                             <div class="personal-left">
-                                                <span>邮箱注册用户名前缀:</span>
+                                                <span>短信通道:</span>
+                                            </div>
+                                            <div class="personal-radio">
+                                                <input type="radio" name="email" value="0" checked="checked">&nbsp;开启
+                                                <input type="radio" name="email" value="1">&nbsp;关闭
+                         
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="personal-li">
+                                        <div class="personal-settings">
+                                            <div class="personal-left">
+                                                <span>网站:</span>
+                                            </div>
+                                            <div class="personal-radio">
+                                                <input type="radio" name="weixin" value="0"  class="yincang" id="radio1" checked="checked" >&nbsp;开启
+                                                
+                                                <input type="radio" name="weixin" value="2" class="xianshi" id="radio2">&nbsp;关闭
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="personal-li beiyincang" >
+                                        <div class="personal-settings" >
+                                            <div class="personal-left">
+                                                <span>备注:</span>
                                             </div>
                                             <div class="personal-content">
-                                                <input type="text" name="" class="form-control">
-                                            </div>
-                                        </div>
-
-                                    </li>
-                                    <li class="personal-li">
-                                        <div class="personal-settings">
-                                            <div class="personal-left">
-                                                <span>手机注册生成用户名:</span>
-                                            </div>
-                                            <div class="personal-radio">
-                                                <input type="radio" name="mobile" value="0" checked="checked">&nbsp;手机号
-                                                <input type="radio" name="mobile" value="1">&nbsp;前缀+手机号
-                                                <input type="radio" name="mobile" value="2">&nbsp;前缀+随机字符
+                                                <input type="text" name="note" class="form-control" style="width: 500px;">
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="personal-li">
-                                        <div class="personal-settings">
-                                            <div class="personal-left">
-                                                <span>邮箱注册生成用户名:</span>
-                                            </div>
-                                            <div class="personal-radio">
-                                                <input type="radio" name="email" value="0" checked="checked">&nbsp;手机号
-                                                <input type="radio" name="email" value="1">&nbsp;前缀+手机号
-                                                <input type="radio" name="email" value="2">&nbsp;前缀+随机字符
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="personal-li">
+                                    
+                                    
+                                    
+                                    <!--<li class="personal-li">
                                         <div class="personal-settings">
                                             <div class="personal-left">
                                                 <span>第三方注册生成用户名:</span>
@@ -653,8 +676,8 @@
                                         </div>
 
 
-                                    </li>
-                                    <li class="personal-li">
+                                    </li>-->
+                                    <!--<li class="personal-li">
                                         <div class="personal-settings">
                                             <div class="personal-left">
                                                 <span>微信注册生成密码:</span>
@@ -665,8 +688,8 @@
                                                 <input type="radio" name="weixin" value="2" class="xianshi" id="radio2">&nbsp;指定密码
                                             </div>
                                         </div>
-                                    </li>
-                                    <li class="personal-li beiyincang" >
+                                    </li>-->
+                                    <!--<li class="personal-li beiyincang" >
                                         <div class="personal-settings" >
                                             <div class="personal-left">
                                                 <span>输入指定密码:</span>
@@ -675,7 +698,7 @@
                                                 <input type="text" name="" class="form-control">
                                             </div>
                                         </div>
-                                    </li>
+                                    </li>-->
                                     <div class="personal-bc">
                                         <button type="submit" class=" btn  personal-btn">保存</button>
                                     </div>

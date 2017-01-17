@@ -297,30 +297,7 @@
 			        </span>
                 </a>
             </li>
-            <li class="sub-menu">
-                <a href="javascript:;">
-                    <i class="fa fa-briefcase">
-                    </i>
-                    <span>
-			          企业管理
-			        </span>
-                    <span class="label label-success span-sidebar">
-			        1
-			        </span>
-                </a>
-                <ul class="sub">
-                    <!--<li>-->
-                    <!--<a href="job_listings.html">-->
-                    <!--职位列表-->
-                    <!--</a>-->
-                    <!--</li>-->
-                    <li>
-                        <a href="<?php echo U('Business/enterprise_certification');?>">
-                            企业认证
-                        </a>
-                    </li>
-                </ul>
-            </li>
+            
             <li class="sub-menu">
                 <a href="javascript:;">
                     <i class="fa fa-briefcase">
@@ -377,6 +354,31 @@
                     <li>
                         <a href="<?php echo U('Member/bd_lib');?>">
                             BD列表
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li class="sub-menu">
+                <a href="javascript:;">
+                    <i class="fa fa-briefcase">
+                    </i>
+                    <span>
+			          企业管理
+			        </span>
+                    <span class="label label-success span-sidebar">
+			        1
+			        </span>
+                </a>
+                <ul class="sub">
+                    <!--<li>-->
+                    <!--<a href="job_listings.html">-->
+                    <!--职位列表-->
+                    <!--</a>-->
+                    <!--</li>-->
+                    <li>
+                        <a href="<?php echo U('Business/enterprise_certification');?>">
+                            企业认证
                         </a>
                     </li>
                 </ul>
@@ -523,14 +525,14 @@
                     <!--</li>-->
                     <li>
                         <a href="<?php echo U('System/personal_settings');?>">
-                            企业设置
+                            基础设置
                         </a>
                     </li>
-                    <li>
+                    <!--<li>
                         <a href="<?php echo U('System/registry_settings');?>">
                             注册设置
                         </a>
-                    </li>
+                    </li>-->
                     <!--<li>-->
                     <!--<a href="#">-->
                     <!--安全设置-->
@@ -558,7 +560,7 @@
                     <!--</li>-->
                     
                     <li>
-                        <a href="<?php echo U('Position/job_class');?>">
+                        <a href="<?php echo U('System/job_class');?>">
                             分类管理
                         </a>
                     </li>
@@ -624,12 +626,13 @@
 			                                          		</li>
 			                                          		<li style="width: 15%;">
 			                                          			<div class="pull-right">
-		                                                            <a href="<?php echo U('Position/add_childe_class');?>">添加子类</a>&nbsp;|
-		                                                            <a href="<?php echo U('Position/alter_job_class');?>">修改</a>&nbsp;|
+		                                                            <a href="<?php echo U('System/add_childe_class');?>">添加子类</a>&nbsp;|
+		                                                            <a href="<?php echo U('System/alter_job_class');?>">修改</a>&nbsp;|
 		                                                            <a href="#">删除</a>
 		                                                        </div>
 			                                          		</li>
 		                                          		</ul>
+		                                          		
 		                                          		
 		                                          		<!--二级-->
 			                                          	<div class="wx-two">
@@ -645,8 +648,8 @@
 				                                          		</li>
 				                                          		<li style="width: 15%;">
 				                                          			<div class="pull-right">
-			                                                            <a href="<?php echo U('Position/add_childe_class');?>">添加子类</a>&nbsp;|
-			                                                            <a href="<?php echo U('Position/alter_job_class');?>">修改</a>&nbsp;|
+			                                                            <a href="<?php echo U('System/add_childe_class');?>">添加子类</a>&nbsp;|
+		                                                            	<a href="<?php echo U('System/alter_job_class');?>">修改</a>&nbsp;|
 			                                                            <a href="#">删除</a>
 			                                                        </div>
 				                                          		</li>
@@ -665,8 +668,8 @@
 					                                          		</li>
 					                                          		<li style="width: 15%;">
 					                                          			<div class="pull-right">
-				                                                            <a href="<?php echo U('Position/add_childe_class');?>">添加子类</a>&nbsp;|
-				                                                            <a href="<?php echo U('Position/alter_job_class');?>">修改</a>&nbsp;|
+				                                                            <a href="<?php echo U('System/add_childe_class');?>">添加子类</a>&nbsp;|
+		                                                           			<a href="<?php echo U('System/alter_job_class');?>">修改</a>&nbsp;|
 				                                                            <a href="#">删除</a>
 				                                                        </div>
 					                                          		</li>
@@ -687,7 +690,7 @@
 						                                          		<li style="width: 15%;">
 						                                          			<div class="pull-right">
 					                                                            <!--<a href="<?php echo U('Position/add_childe_class');?>">添加子类</a>&nbsp;|-->
-					                                                            <a href="<?php echo U('Position/alter_job_class');?>">修改</a>&nbsp;|
+					                                                            <a href="<?php echo U('System/alter_job_class');?>">修改</a>&nbsp;|
 					                                                            <a href="#">删除</a>
 					                                                        </div>
 						                                          		</li>
@@ -713,8 +716,8 @@
 				                                          		</li>
 				                                          		<li style="width: 15%;">
 				                                          			<div class="pull-right">
-			                                                            <a href="<?php echo U('Position/add_childe_class');?>">添加子类</a>&nbsp;|
-			                                                            <a href="<?php echo U('Position/alter_job_class');?>">修改</a>&nbsp;|
+			                                                            <a href="<?php echo U('System/add_childe_class');?>">添加子类</a>&nbsp;|
+		                                                           		<a href="<?php echo U('System/alter_job_class');?>">修改</a>&nbsp;|
 			                                                            <a href="#">删除</a>
 			                                                        </div>
 				                                          		</li>
@@ -733,8 +736,8 @@
 					                                          		</li>
 					                                          		<li style="width: 15%;">
 					                                          			<div class="pull-right">
-				                                                            <a href="<?php echo U('Position/add_childe_class');?>">添加子类</a>&nbsp;|
-				                                                            <a href="<?php echo U('Position/alter_job_class');?>">修改</a>&nbsp;|
+				                                                            <a href="<?php echo U('System/add_childe_class');?>">添加子类</a>&nbsp;|
+				                                                            <a href="<?php echo U('System/alter_job_class');?>">修改</a>&nbsp;|
 				                                                            <a href="#">删除</a>
 				                                                        </div>
 					                                          		</li>
@@ -755,7 +758,7 @@
 						                                          		<li style="width: 15%;">
 						                                          			<div class="pull-right">
 					                                                            <!--<a href="<?php echo U('Position/add_childe_class');?>">添加子类</a>&nbsp;|-->
-					                                                            <a href="<?php echo U('Position/alter_job_class');?>">修改</a>&nbsp;|
+					                                                            <a href="<?php echo U('System/alter_job_class');?>">修改</a>&nbsp;|
 					                                                            <a href="#">删除</a>
 					                                                        </div>
 						                                          		</li>
@@ -786,8 +789,8 @@
 			                                          		</li>
 			                                          		<li style="width: 15%;">
 			                                          			<div class="pull-right">
-		                                                            <a href="<?php echo U('Position/add_childe_class');?>">添加子类</a>&nbsp;|
-		                                                            <a href="<?php echo U('Position/alter_job_class');?>">修改</a>&nbsp;|
+		                                                            <a href="<?php echo U('System/add_childe_class');?>">添加子类</a>&nbsp;|
+		                                                            <a href="<?php echo U('System/alter_job_class');?>">修改</a>&nbsp;|
 		                                                            <a href="#">删除</a>
 		                                                        </div>
 			                                          		</li>
@@ -807,8 +810,8 @@
 				                                          		</li>
 				                                          		<li style="width: 15%;">
 				                                          			<div class="pull-right">
-			                                                            <a href="<?php echo U('Position/add_childe_class');?>">添加子类</a>&nbsp;|
-			                                                            <a href="<?php echo U('Position/alter_job_class');?>">修改</a>&nbsp;|
+			                                                            <a href="<?php echo U('System/add_childe_class');?>">添加子类</a>&nbsp;|
+			                                                            <a href="<?php echo U('System/alter_job_class');?>">修改</a>&nbsp;|
 			                                                            <a href="#">删除</a>
 			                                                        </div>
 				                                          		</li>
@@ -827,8 +830,8 @@
 					                                          		</li>
 					                                          		<li style="width: 15%;">
 					                                          			<div class="pull-right">
-				                                                            <a href="<?php echo U('Position/add_childe_class');?>">添加子类</a>&nbsp;|
-				                                                            <a href="<?php echo U('Position/alter_job_class');?>">修改</a>&nbsp;|
+				                                                            <a href="<?php echo U('System/add_childe_class');?>">添加子类</a>&nbsp;|
+				                                                            <a href="<?php echo U('System/alter_job_class');?>">修改</a>&nbsp;|
 				                                                            <a href="#">删除</a>
 				                                                        </div>
 					                                          		</li>
@@ -840,7 +843,7 @@
 					                                          			<li class="wx-dress" style="width: 60%;">
 						                                          			<input type="checkbox" name="id[]" value="1" id="1" class="Bcheck">
 					                                                        <input name="save_id[]" type="hidden" value="1">
-					                                                        <img src="/Public/Admin/img/left_d.gif" border="0" align="absmiddle" id="1" class="leftimg2">
+					                                                        <img src="/Public/Admin/img/left_e.gif" border="0" align="absmiddle" id="1" class="leftimg3">
 					                                                        <span name="categoryname[]" class="region-span">大同区</span>
 						                                          		</li>
 						                                          		<li style="width: 20%; margin-top: 8px;">
@@ -848,12 +851,34 @@
 						                                          		</li>
 						                                          		<li style="width: 15%;">
 						                                          			<div class="pull-right">
-					                                                            <!--<a href="<?php echo U('Position/add_childe_class');?>">添加子类</a>&nbsp;|-->
-					                                                            <a href="<?php echo U('Position/alter_job_class');?>">修改</a>&nbsp;|
+					                                                            <a href="<?php echo U('Position/add_childe_class');?>">添加子类</a>&nbsp;|
+					                                                            <a href="<?php echo U('System/alter_job_class');?>">修改</a>&nbsp;|
 					                                                            <a href="#">删除</a>
 					                                                        </div>
 						                                          		</li>
 					                                          		</ul>
+					                                          		<!--五级-->
+					                                          		<div class="wx-five">
+						                                          		<ul class="wx-jobnor">
+						                                          			<li class="wx-dress" style="width: 60%;">
+							                                          			<input type="checkbox" name="id[]" value="1" id="1" class="Bcheck">
+						                                                        <input name="save_id[]" type="hidden" value="1">
+						                                                        <img src="/Public/Admin/img/left_d.gif" border="0" align="absmiddle" id="1" class="leftimg4">
+						                                                        <span name="categoryname[]" class="region-span">大同镇</span>
+							                                          		</li>
+							                                          		<li style="width: 20%; margin-top: 8px;">
+							                                          			<input class="form-control region-ord" name="category_order[]" type="text" value="0">
+							                                          		</li>
+							                                          		<li style="width: 15%;">
+							                                          			<div class="pull-right">
+						                                                            <!--<a href="<?php echo U('Position/add_childe_class');?>">添加子类</a>&nbsp;|-->
+						                                                            <a href="<?php echo U('System/alter_job_class');?>">修改</a>&nbsp;|
+						                                                            <a href="#">删除</a>
+						                                                        </div>
+							                                          		</li>
+						                                          		</ul>
+						                                          	</div>
+					                                          		
 					                                          	</div>
 				                                          		
 				                                          	</div>
@@ -876,8 +901,8 @@
 			                                          		</li>
 			                                          		<li style="width: 15%;">
 			                                          			<div class="pull-right">
-		                                                            <a href="<?php echo U('Position/add_childe_class');?>">添加子类</a>&nbsp;|
-		                                                            <a href="<?php echo U('Position/alter_job_class');?>">修改</a>&nbsp;|
+		                                                            <a href="<?php echo U('System/add_childe_class');?>">添加子类</a>&nbsp;|
+		                                                            <a href="<?php echo U('System/alter_job_class');?>">修改</a>&nbsp;|
 		                                                            <a href="#">删除</a>
 		                                                        </div>
 			                                          		</li>
@@ -897,8 +922,8 @@
 				                                          		</li>
 				                                          		<li style="width: 15%;">
 				                                          			<div class="pull-right">
-			                                                            <a href="<?php echo U('Position/add_childe_class');?>">添加子类</a>&nbsp;|
-			                                                            <a href="<?php echo U('Position/alter_job_class');?>">修改</a>&nbsp;|
+			                                                            <a href="<?php echo U('System/add_childe_class');?>">添加子类</a>&nbsp;|
+			                                                            <a href="<?php echo U('System/alter_job_class');?>">修改</a>&nbsp;|
 			                                                            <a href="#">删除</a>
 			                                                        </div>
 				                                          		</li>
@@ -917,8 +942,8 @@
 					                                          		</li>
 					                                          		<li style="width: 15%;">
 					                                          			<div class="pull-right">
-				                                                            <a href="<?php echo U('Position/add_childe_class');?>">添加子类</a>&nbsp;|
-				                                                            <a href="<?php echo U('Position/alter_job_class');?>">修改</a>&nbsp;|
+				                                                            <a href="<?php echo U('System/add_childe_class');?>">添加子类</a>&nbsp;|
+				                                                            <a href="<?php echo U('System/alter_job_class');?>">修改</a>&nbsp;|
 				                                                            <a href="#">删除</a>
 				                                                        </div>
 					                                          		</li>
@@ -939,7 +964,7 @@
 						                                          		<li style="width: 15%;">
 						                                          			<div class="pull-right">
 					                                                            <!--<a href="<?php echo U('Position/add_childe_class');?>">添加子类</a>&nbsp;|-->
-					                                                            <a href="<?php echo U('Position/alter_job_class');?>">修改</a>&nbsp;|
+					                                                            <a href="<?php echo U('System/alter_job_class');?>">修改</a>&nbsp;|
 					                                                            <a href="#">删除</a>
 					                                                        </div>
 						                                          		</li>
@@ -966,8 +991,8 @@
 			                                          		</li>
 			                                          		<li style="width: 15%;">
 			                                          			<div class="pull-right">
-		                                                            <a href="<?php echo U('Position/add_childe_class');?>">添加子类</a>&nbsp;|
-		                                                            <a href="<?php echo U('Position/alter_job_class');?>">修改</a>&nbsp;|
+		                                                            <a href="<?php echo U('System/add_childe_class');?>">添加子类</a>&nbsp;|
+		                                                            <a href="<?php echo U('System/alter_job_class');?>">修改</a>&nbsp;|
 		                                                            <a href="#">删除</a>
 		                                                        </div>
 			                                          		</li>
@@ -987,8 +1012,8 @@
 				                                          		</li>
 				                                          		<li style="width: 15%;">
 				                                          			<div class="pull-right">
-			                                                            <a href="<?php echo U('Position/add_childe_class');?>">添加子类</a>&nbsp;|
-			                                                            <a href="<?php echo U('Position/alter_job_class');?>">修改</a>&nbsp;|
+			                                                            <a href="<?php echo U('System/add_childe_class');?>">添加子类</a>&nbsp;|
+			                                                            <a href="<?php echo U('System/alter_job_class');?>">修改</a>&nbsp;|
 			                                                            <a href="#">删除</a>
 			                                                        </div>
 				                                          		</li>
@@ -1007,8 +1032,8 @@
 					                                          		</li>
 					                                          		<li style="width: 15%;">
 					                                          			<div class="pull-right">
-				                                                            <a href="<?php echo U('Position/add_childe_class');?>">添加子类</a>&nbsp;|
-				                                                            <a href="<?php echo U('Position/alter_job_class');?>">修改</a>&nbsp;|
+				                                                            <a href="<?php echo U('System/add_childe_class');?>">添加子类</a>&nbsp;|
+				                                                            <a href="<?php echo U('System/alter_job_class');?>">修改</a>&nbsp;|
 				                                                            <a href="#">删除</a>
 				                                                        </div>
 					                                          		</li>
@@ -1029,7 +1054,7 @@
 						                                          		<li style="width: 15%;">
 						                                          			<div class="pull-right">
 					                                                            <!--<a href="<?php echo U('Position/add_childe_class');?>">添加子类</a>&nbsp;|-->
-					                                                            <a href="<?php echo U('Position/alter_job_class');?>">修改</a>&nbsp;|
+					                                                            <a href="<?php echo U('System/alter_job_class');?>">修改</a>&nbsp;|
 					                                                            <a href="#">删除</a>
 					                                                        </div>
 						                                          		</li>
@@ -1045,23 +1070,7 @@
 		                                          	
 		                                          	
 		                                          	
-		                                          	
-		                                          	
-		                                          	
-		                                          	
-		                                          	
-		                                          	
-		                                          	
-		                                          	
-		                                          	
-		                                          	
-		                                          	
-		                                          	
-		                                          	
-		                                          	
-		                                          	
-		                                          	
-		                                          	
+		                    
 		                                          	
 		                                          	<!--三级-->
 		                                          	<div class="wx-three">
@@ -1077,8 +1086,8 @@
 			                                          		</li>
 			                                          		<li style="width: 15%;">
 			                                          			<div class="pull-right">
-		                                                            <a href="<?php echo U('Position/add_childe_class');?>">添加子类</a>&nbsp;|
-		                                                            <a href="<?php echo U('Position/alter_job_class');?>">修改</a>&nbsp;|
+		                                                            <a href="<?php echo U('System/add_childe_class');?>">添加子类</a>&nbsp;|
+		                                                            <a href="<?php echo U('System/alter_job_class');?>">修改</a>&nbsp;|
 		                                                            <a href="#">删除</a>
 		                                                        </div>
 			                                          		</li>
@@ -1098,8 +1107,8 @@
 			                                          		</li>
 			                                          		<li style="width: 15%;">
 			                                          			<div class="pull-right">
-		                                                            <a href="<?php echo U('Position/add_childe_class');?>">添加子类</a>&nbsp;|
-		                                                            <a href="<?php echo U('Position/alter_job_class');?>">修改</a>&nbsp;|
+		                                                            <a href="<?php echo U('System/add_childe_class');?>">添加子类</a>&nbsp;|
+		                                                            <a href="<?php echo U('System/alter_job_class');?>">修改</a>&nbsp;|
 		                                                            <a href="#">删除</a>
 		                                                        </div>
 			                                          		</li>
@@ -1107,25 +1116,7 @@
 		                                          	</div>
 		                                          	
 		                                          	
-		                                          	
-		                                          	
-		                                          	
-		                                          	
-		                                          	
-		                                          	
-		                                          	
-		                                          	
-		                                          	
-		                                          	
-		                                          	
-		                                          	
-		                                          	
-		                                          	
-		                                          	
-		                                          	
-		                                          	
-		                                          	
-		                                          	
+
 		                                          	
 		                                          	
 		                                        </div>

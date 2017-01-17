@@ -14,7 +14,7 @@ class PositionController extends PublicController{
 			'size' => '20'
 		];
 		$data = json_encode($data);
-//		print_r($data);exit;
+		print_r($data);exit;
 //		从接口得到数据
 		$JobRemoteModel = new JobRemoteModel();
 		$jobList = $JobRemoteModel->jobList($data);
@@ -23,28 +23,17 @@ class PositionController extends PublicController{
   }
 
 
-//public function job_update(){
-//	for($i;$i<$count;$i++){
-//		$a = $list[$i]['id'];
-//		$c = $list[$i];	
-//	}
-//	$jobid 	= intval($_GET['id']);
-//	$this->display();
-//}
-    
-//职位分类
-  public function job_class(){
-  	$this->display();
-  }
-  
-//添加子分类
-  public function add_childe_class(){
-  	$this->display();
-  }
-  
-//编辑
-	public function alter_job_class(){
-		$this->display();
+public function job_update(){
+	for($i;$i<$count;$i++){
+		$a = $list[$i]['id'];
+		$c = $list[$i];	
 	}
+	$jobid 	= intval($_GET['id']);
+	$this->display();
+}
+    
+
+
+
 	
 }

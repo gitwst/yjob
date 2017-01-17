@@ -295,30 +295,7 @@
 			        </span>
                 </a>
             </li>
-            <li class="sub-menu">
-                <a href="javascript:;">
-                    <i class="fa fa-briefcase">
-                    </i>
-                    <span>
-			          企业管理
-			        </span>
-                    <span class="label label-success span-sidebar">
-			        1
-			        </span>
-                </a>
-                <ul class="sub">
-                    <!--<li>-->
-                    <!--<a href="job_listings.html">-->
-                    <!--职位列表-->
-                    <!--</a>-->
-                    <!--</li>-->
-                    <li>
-                        <a href="<?php echo U('Business/enterprise_certification');?>">
-                            企业认证
-                        </a>
-                    </li>
-                </ul>
-            </li>
+            
             <li class="sub-menu">
                 <a href="javascript:;">
                     <i class="fa fa-briefcase">
@@ -341,11 +318,8 @@
                             职位修改
                         </a>
                     </li>-->
-                    <li>
-                        <a href="<?php echo U('Position/job_class');?>">
-                            职位分类
-                        </a>
-                    </li>
+                    
+            
                 </ul>
             </li>
             <li class="sub-menu">
@@ -378,6 +352,31 @@
                     <li>
                         <a href="<?php echo U('Member/bd_lib');?>">
                             BD列表
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li class="sub-menu">
+                <a href="javascript:;">
+                    <i class="fa fa-briefcase">
+                    </i>
+                    <span>
+			          企业管理
+			        </span>
+                    <span class="label label-success span-sidebar">
+			        1
+			        </span>
+                </a>
+                <ul class="sub">
+                    <!--<li>-->
+                    <!--<a href="job_listings.html">-->
+                    <!--职位列表-->
+                    <!--</a>-->
+                    <!--</li>-->
+                    <li>
+                        <a href="<?php echo U('Business/enterprise_certification');?>">
+                            企业认证
                         </a>
                     </li>
                 </ul>
@@ -524,14 +523,14 @@
                     <!--</li>-->
                     <li>
                         <a href="<?php echo U('System/personal_settings');?>">
-                            企业设置
+                            基础设置
                         </a>
                     </li>
-                    <li>
+                    <!--<li>
                         <a href="<?php echo U('System/registry_settings');?>">
                             注册设置
                         </a>
-                    </li>
+                    </li>-->
                     <!--<li>-->
                     <!--<a href="#">-->
                     <!--安全设置-->
@@ -557,6 +556,13 @@
                     <!--微信公众号设置-->
                     <!--</a>-->
                     <!--</li>-->
+                    
+                    <li>
+                        <a href="<?php echo U('System/job_class');?>">
+                            分类管理
+                        </a>
+                    </li>
+                    
                     <li>
                         <a href="<?php echo U('System/substation_management');?>">
                             分站管理
@@ -588,7 +594,7 @@
                         <div class="panel-body body-waiwei">
                             <ul>
                                 <li class="lifirst">
-                                    企业设置
+                                     基础设置
                                 </li>
                                 <div class="first-hr">
                                     <hr />
@@ -616,7 +622,7 @@
                                         </div>
 
                                     </li>
-                                    <li class="personal-li">
+                                    <!--<li class="personal-li">
                                         <div class="personal-settings">
                                             <div class="personal-left">
                                                 <span>允许会员发布简历:</span>
@@ -628,101 +634,88 @@
                                                 <span>份</span>
                                             </div>
                                         </div>
-                                    </li>
-
+                                    </li>-->
+                                    
                                     <li class="personal-li">
                                         <div class="personal-settings">
                                             <div class="personal-left">
-                                                <span>会员取消报名限制时间:</span>
+                                                <span>未实名会员每天投递次数:</span>
                                             </div>
                                             <div class="personal-content">
                                                 <input type="text" name="" class="form-control">
                                             </div>
                                             <div class="personal-right">
-                                                <span>天</span>
+                                                <span>次</span>
                                             </div>
                                         </div>
-
                                     </li>
+                                    
                                     <li class="personal-li">
                                         <div class="personal-settings">
                                             <div class="personal-left">
-                                                <span>每天允许申请职位:</span>
+                                                <span>实名会员每天投递次数:</span>
                                             </div>
                                             <div class="personal-content">
                                                 <input type="text" name="" class="form-control">
                                             </div>
                                             <div class="personal-right">
-                                                <span>个</span>
+                                                <span>次</span>
                                             </div>
                                         </div>
-
-
                                     </li>
-
+                                    
                                     <li class="personal-li">
                                         <div class="personal-settings">
                                             <div class="personal-left">
-                                                <span>简历照片大小不能超过:</span>
+                                                <span>注册:</span>
                                             </div>
-                                            <div class="personal-content">
-                                                <input type="text" name="" class="form-control">
-                                            </div>
-                                            <div class="personal-right">
-                                                <span>KB</span>
+                                            <div class="personal-radio">
+                                                <input type="radio" name="mobile" value="0" checked="checked">&nbsp;允许注册
+                                                <input type="radio" name="mobile" value="1">&nbsp;关闭注册
                                             </div>
                                         </div>
-
-
                                     </li>
-
+                                    
                                     <li class="personal-li">
                                         <div class="personal-settings">
                                             <div class="personal-left">
-                                                <span>简历列表数最大为:</span>
+                                                <span>短信通道:</span>
                                             </div>
-                                            <div class="personal-content">
-                                                <input type="text" name="" class="form-control">
-                                            </div>
-                                            <div class="personal-right">
-                                                <span>条&nbsp;(0为不限制)</span>
-
+                                            <div class="personal-radio">
+                                                <input type="radio" name="email" value="0" checked="checked">&nbsp;开启
+                                                <input type="radio" name="email" value="1">&nbsp;关闭
+                         
                                             </div>
                                         </div>
-
                                     </li>
-
+                                    
                                     <li class="personal-li">
                                         <div class="personal-settings">
                                             <div class="personal-left">
-                                                <span>刷新简历时间间隔:</span>
+                                                <span>网站:</span>
                                             </div>
-                                            <div class="personal-content">
-                                                <input type="text" name="" class="form-control">
-                                            </div>
-                                            <div class="personal-right">
-                                                <span>分钟&nbsp;(0为不限制)</span>
+                                            <div class="personal-radio">
+                                                <input type="radio" name="weixin" value="0"  class="yincang" id="radio1" checked="checked" >&nbsp;开启
+                                                
+                                                <input type="radio" name="weixin" value="2" class="xianshi" id="radio2">&nbsp;关闭
                                             </div>
                                         </div>
-
-
                                     </li>
-
-                                    <li class="personal-li">
-                                        <div class="personal-settings">
+                                    <li class="personal-li beiyincang" >
+                                        <div class="personal-settings" >
                                             <div class="personal-left">
-                                                <span>每天刷新简历次数限制:</span>
+                                                <span>备注:</span>
                                             </div>
                                             <div class="personal-content">
-                                                <input type="text" name="" class="form-control">
-                                            </div>
-                                            <div class="personal-right">
-                                                <span>次&nbsp;(0为不限制)</span>
+                                                <input type="text" name="note" class="form-control" style="width: 500px;">
                                             </div>
                                         </div>
-
-
                                     </li>
+                                    
+                                    
+                                    
+                                    
+<!--
                                     <li class="personal-li">
                                         <div class="personal-settings">
                                             <div class="personal-left">
@@ -734,7 +727,7 @@
                                                 <input type="radio" name="personal" value="2">姓氏
                                             </div>
                                         </div>
-                                    </li>
+                                    </li>-->
                                     <div class="personal-bc">
                                         <button type="submit" class=" btn  personal-btn">保存</button>
                                     </div>

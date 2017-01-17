@@ -148,7 +148,7 @@
     color: #333333;
     width: 120px;
     height: 33px;
-    margin-left: 40px;
+    /*margin-left: 40px;*/
     display: inline;
 }
 
@@ -605,6 +605,7 @@ input.form_datetime.form-control.shijian-input{
     display: inline;
 }
 
+/*wx*/
 /*职位分类*/
 
 .wx-joblist{
@@ -660,8 +661,15 @@ input.form_datetime.form-control.shijian-input{
 .wx-throu ul.wx-jobnor li.wx-dress{
 	padding-left: 160px;
 }
+
 .wx-throu{
 	display: none;
+}
+.wx-five{
+	display: none;
+}
+.wx-five ul.wx-jobnor li.wx-dress{
+	padding-left: 210px;
 }
 .wx-two ul.wx-jobnor{
 	border-bottom: 1px solid #DDDDDD;
@@ -672,6 +680,10 @@ input.form_datetime.form-control.shijian-input{
 	
 }
 .wx-throu ul.wx-jobnor{
+	border-bottom: 1px solid #DDDDDD;
+	
+}
+.wx-five ul.wx-jobnor{
 	border-bottom: 1px solid #DDDDDD;
 	
 }

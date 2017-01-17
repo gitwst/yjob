@@ -44,11 +44,12 @@
     <![endif]-->
     <!-- END STYLESHEET-->
 </head>
+
 <body>
-<!-- 开始-->
-<section id="container">
-    <!--头部-->
-<!-- BEGIN HEADER -->
+	<!-- BEGIN SECTION -->
+	<section id="container" class="">
+
+		<!-- BEGIN HEADER -->
 <header class="header white-bg">
     <a href="<?php echo U('Index/index');?>" class="logo">
         <img src="/Public/Admin/img/images/header_06.png" alt="">
@@ -296,7 +297,30 @@
 			        </span>
                 </a>
             </li>
-            
+            <li class="sub-menu">
+                <a href="javascript:;">
+                    <i class="fa fa-briefcase">
+                    </i>
+                    <span>
+			          企业管理
+			        </span>
+                    <span class="label label-success span-sidebar">
+			        1
+			        </span>
+                </a>
+                <ul class="sub">
+                    <!--<li>-->
+                    <!--<a href="job_listings.html">-->
+                    <!--职位列表-->
+                    <!--</a>-->
+                    <!--</li>-->
+                    <li>
+                        <a href="<?php echo U('Business/enterprise_certification');?>">
+                            企业认证
+                        </a>
+                    </li>
+                </ul>
+            </li>
             <li class="sub-menu">
                 <a href="javascript:;">
                     <i class="fa fa-briefcase">
@@ -353,31 +377,6 @@
                     <li>
                         <a href="<?php echo U('Member/bd_lib');?>">
                             BD列表
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            
-            <li class="sub-menu">
-                <a href="javascript:;">
-                    <i class="fa fa-briefcase">
-                    </i>
-                    <span>
-			          企业管理
-			        </span>
-                    <span class="label label-success span-sidebar">
-			        1
-			        </span>
-                </a>
-                <ul class="sub">
-                    <!--<li>-->
-                    <!--<a href="job_listings.html">-->
-                    <!--职位列表-->
-                    <!--</a>-->
-                    <!--</li>-->
-                    <li>
-                        <a href="<?php echo U('Business/enterprise_certification');?>">
-                            企业认证
                         </a>
                     </li>
                 </ul>
@@ -585,113 +584,76 @@
     </div>
 </aside>
 <!-- END SIDEBAR -->
-    <!--结束-->
-    <!---正文-->
+    <!-- END SIDEBAR -->
+
+    <!-- BEGIN MAIN CONTENT -->
     <section id="main-content">
         <section class="wrapper">
             <section class="panel panel-first">
                 <div class="">
                     <div class="panel with-nav-tabs panel-info panel-square panel-no-border">
                         <div class="panel-body body-waiwei">
-                            <form method="post" action="<?php echo U('Admin/Instrument/Being_pushed_submit');?>" class="form-horizontal">
-                                <ul>
-                                    <li class="first-font">
-                                        消息推送
-                                    </li>
-                                    <div class="bespread-hr">
+                            <ul>
+                                <li class="first-font">
+                                    <span class="region-topspan"><a href="region_class.html"><< 职位分类管理</a></span>添加分类
+                                </li>
+                            </ul>
+                            <div class="opinion-hr">
+                                <hr />
+                            </div>
+                            <form id="form1" name="form1" method="post" action="" class="form-horizontal">
+                                <input type="hidden" name="hiddentoken" value="600425f9">
+                                <div id="html_tpl">
+                                    <ul>
+                                        <li>
+                                            <label>所属分类:</label>
+                                            <select class="form-control f-input-sm alter-classify">
+                                                <option value="0" selected="selected">顶级分类</option>
+                                                <option value="1">经营管理类</option>
+                                                <option value="2">——销售行政/商务类</option>
+                                                <option value="3">——推广类</option>
+                                                <option value="4">税务类</option>
+                                                <option value="5">——计算机硬件类</option>
+                                                <option value="6">————通信技术类</option>
+                                            </select>
+                                        </li>
+
+                                        <hr />
+                                        <li>
+                                            <label>子类名称:</label>
+                                            <input type="text" class="form-control alter-classify">
+                                        </li>
+                                        <hr />
+                                        <li>
+                                            <div>
+                                                <label>分类排序:</label>
+                                                <input type="text" class="form-control sort-class">
+                                                <span class="alter-span">(数字越大越靠前)</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+
+                                    <div class="opinion-hr">
                                         <hr />
                                     </div>
-                                    <li>
-                                        <div class="form-group">
-                                            <label class="control-label pull-left" for="headline">标题:</label>
-
-                                            <div class="headline-input">
-                                                <input id="headline" type="text" class="form-control" name="news_title">
-                                            </div>
-                                        </div>
-
-                                    </li>
-                                    <hr class="content-hr"/>
-                                    <li>
-                                        <div class="form-group">
-                                            <label class="control-label  pull-left" for="details">内容:</label>
-                                            <div class="details-input">
-                                                <textarea id="details" cols="50" rows="9" name="news_content"></textarea>
-                                            </div>
-                                        </div>
-
-                                    </li>
-                                    <hr class="content-hr"/>
-                                    <li>
-                                        <div class="form-group news-left">
-                                            <label class="control-label pull-left tuisong">推送对象:</label>
-                                            <div class="checkbox checkbox-info checkbox-single fuxuan_one">
-                                                <input type="checkbox" id="checkbox_a1" name="news_obj[]" value="兼职">
-                                                <label for="checkbox_a1">兼职</label>
-                                            </div>
-                                            <div class="checkbox checkbox-info checkbox-single fuxuan">
-                                                <input type="checkbox" id="checkbox_a2" name="news_obj[]" value="督导">
-                                                <label for="checkbox_a2">督导</label>
-                                            </div>
-                                            <div class="checkbox checkbox-info checkbox-single fuxuan">
-                                                <input type="checkbox" id="checkbox_a3" name="news_obj[]" value="BD">
-                                                <label for="checkbox_a3">BD</label>
-                                            </div>
-                                            <div class="checkbox checkbox-info checkbox-single fuxuan">
-                                                <input type="checkbox" id="checkbox_a4" name="news_obj[]" value="企业">
-                                                <label for="checkbox_a4">企业</label>
-                                            </div>
-
-                                        </div>
-
-                                    </li>
-                                    <script>
-                                    	
-                                    </script>
-                                    <hr class="content-hr"/>
-                                    <li>
-                                        <div class="form-group news-left">
-                                            <label class="control-label pull-left tuisong">推送方式:</label>
-                                            <div class="checkbox checkbox-info checkbox-single fuxuan_one">
-                                                <input type="checkbox" id="checkbox_a5" name="news_way[]" value="站内">
-                                                <label for="checkbox_a5">站内</label>
-                                            </div>
-                                            <div class="checkbox checkbox-info checkbox-single fuxuan">
-                                                <input type="checkbox" id="checkbox_a6" name="news_way[]" value="APP">
-                                                <label for="checkbox_a6">APP</label>
-                                            </div>
-                                            <div class="checkbox checkbox-info checkbox-single fuxuan">
-                                                <input type="checkbox" id="checkbox_a7" name="news_way[]" value="短信">
-                                                <label for="checkbox_a7">短信</label>
-                                            </div>
-                                            <div class="checkbox checkbox-info checkbox-single fuxuan">
-                                                <input type="checkbox" id="checkbox_a8" name="news_way[]" value="微信">
-                                                <label for="checkbox_a8">微信</label>
-                                            </div>
-
-                                        </div>
-
-                                    </li>
-                                    <div class="bespread-hr">
-                                        <hr />
-                                    </div>
-                                    <div class="send">
-                                        <button type="submit" class=" btn  btnsend">发送</button>
-                                    </div>
-
-
-                                    </li>
-                                </ul>
+                                </div>
+                                <div id="html"></div>
+                                <div class="send">
+                                    <button type="submit" class=" btn  alter-btn">保存</button>
+                                    <!--<button type="submit" id="add_form" class=" btn  alter-btn">继续添加</button>-->                        <input type="button" name="add_form" id="add_form" class=" btn  alter-btn" value="继续添加">
+                                </div>
                             </form>
-                        </div>
 
+                            <!--</ul>-->
+                        </div>
                     </div>
                 </div>
             </section>
         </section>
     </section>
 </section>
-<!-- 结束 -->
+
 
 <script src="/Public/Admin/js/jquery-1.8.3.min.js" ></script><!-- BASIC JQUERY 1.8.3 LIB. JS -->
 <script src="/Public/Admin/js/zp/zp.js"></script>

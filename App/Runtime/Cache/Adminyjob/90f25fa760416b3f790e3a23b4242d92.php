@@ -296,30 +296,7 @@
 			        </span>
                 </a>
             </li>
-            <li class="sub-menu">
-                <a href="javascript:;">
-                    <i class="fa fa-briefcase">
-                    </i>
-                    <span>
-			          企业管理
-			        </span>
-                    <span class="label label-success span-sidebar">
-			        1
-			        </span>
-                </a>
-                <ul class="sub">
-                    <!--<li>-->
-                    <!--<a href="job_listings.html">-->
-                    <!--职位列表-->
-                    <!--</a>-->
-                    <!--</li>-->
-                    <li>
-                        <a href="<?php echo U('Business/enterprise_certification');?>">
-                            企业认证
-                        </a>
-                    </li>
-                </ul>
-            </li>
+            
             <li class="sub-menu">
                 <a href="javascript:;">
                     <i class="fa fa-briefcase">
@@ -342,11 +319,8 @@
                             职位修改
                         </a>
                     </li>-->
-                    <li>
-                        <a href="<?php echo U('Position/job_class');?>">
-                            职位分类
-                        </a>
-                    </li>
+                    
+            
                 </ul>
             </li>
             <li class="sub-menu">
@@ -379,6 +353,31 @@
                     <li>
                         <a href="<?php echo U('Member/bd_lib');?>">
                             BD列表
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li class="sub-menu">
+                <a href="javascript:;">
+                    <i class="fa fa-briefcase">
+                    </i>
+                    <span>
+			          企业管理
+			        </span>
+                    <span class="label label-success span-sidebar">
+			        1
+			        </span>
+                </a>
+                <ul class="sub">
+                    <!--<li>-->
+                    <!--<a href="job_listings.html">-->
+                    <!--职位列表-->
+                    <!--</a>-->
+                    <!--</li>-->
+                    <li>
+                        <a href="<?php echo U('Business/enterprise_certification');?>">
+                            企业认证
                         </a>
                     </li>
                 </ul>
@@ -525,14 +524,14 @@
                     <!--</li>-->
                     <li>
                         <a href="<?php echo U('System/personal_settings');?>">
-                            企业设置
+                            基础设置
                         </a>
                     </li>
-                    <li>
+                    <!--<li>
                         <a href="<?php echo U('System/registry_settings');?>">
                             注册设置
                         </a>
-                    </li>
+                    </li>-->
                     <!--<li>-->
                     <!--<a href="#">-->
                     <!--安全设置-->
@@ -558,6 +557,13 @@
                     <!--微信公众号设置-->
                     <!--</a>-->
                     <!--</li>-->
+                    
+                    <li>
+                        <a href="<?php echo U('System/job_class');?>">
+                            分类管理
+                        </a>
+                    </li>
+                    
                     <li>
                         <a href="<?php echo U('System/substation_management');?>">
                             分站管理
@@ -614,10 +620,9 @@
                                 <!-- 新起一行 -->
                                 <tr>
                                     <td>
-                                        <!-- <input type="checkbox" name="" class="chk"> -->
                                         <div class="checkbox checkbox-info checkbox-inline checkbox-single">
-                                            <input id="talentCheckbox1" type="checkbox">
-                                            <label for="talentCheckbox1"></label>
+                                            <input id="checkbox_a1" type="checkbox">
+                                            <label for="checkbox_a1"></label>
                                         </div>
                                     </td>
                                     <td class="text-blue">肖允瀚</td>
@@ -641,7 +646,7 @@
 								            <li class="wx-new"><a href=""><span class="wx-span1" style="color: #999999;">好多字说没就没了</span><span class="wx-span2" style="color: #999999;">恩，是啊，说没就没了</span></a></li>
 								            <li class="wx-new"><a href=""><span class="wx-span1" style="color: #999999;">好多字说没就没了</span><span class="wx-span2" style="color: #999999;">恩，是啊，说没就没了</span></a></li>
 								            <li class="wx-new"><a href=""><span class="wx-span1" style="color: #999999;">好多字说没就没了</span><span class="wx-span2" style="color: #999999;">恩，是啊，说没就没了</span></a></li>
-								            <li class=" wx-new tc"><a href="#"><span class="wx-span1" style="color: #999999;">个人魅力</span></a></li>
+								            <li class=" wx-new tc"><a href="#"><span class="wx-span1">个人魅力卡</span>个人魅力</span></a></li>
 						                </ul>
 						                
 						                <div class="wx-a">
@@ -685,10 +690,9 @@
                                 <!-- 新起一行 -->
                                 <tr>
                                     <td>
-                                        <!-- <input type="checkbox" name="" class="chk"> -->
                                         <div class="checkbox checkbox-info checkbox-inline checkbox-single">
-                                            <input id="talentCheckbox2" type="checkbox">
-                                            <label for="talentCheckbox2"></label>
+                                            <input id="checkbox_a2" type="checkbox">
+                                            <label for="checkbox_a2"></label>
                                         </div>
                                     </td>
                                     <td class="text-blue">肖允瀚</td>
@@ -713,7 +717,7 @@
 								            <li class="wx-new"><a href=""><span class="wx-span1" style="color: #999999;">好多字说没就没了</span><span class="wx-span2" style="color: #999999;">恩，是啊，说没就没了</span></a></li>
 								            <li class="wx-new"><a href=""><span class="wx-span1" style="color: #999999;">好多字说没就没了</span><span class="wx-span2" style="color: #999999;">恩，是啊，说没就没了</span></a></li>
 								            <li class="wx-new"><a href=""><span class="wx-span1" style="color: #999999;">好多字说没就没了</span><span class="wx-span2" style="color: #999999;">恩，是啊，说没就没了</span></a></li>
-								            <li class=" wx-new tc"><a href="#"><span class="wx-span1" style="color: #999999;">个人魅力</span></a></li>
+								            <li class=" wx-new tc"><a href="#"><span class="wx-span1">个人魅力卡</span>个人魅力</span></a></li>
 						                </ul>
 						                
 						                <div class="wx-a">
@@ -758,10 +762,9 @@
                         		<!-- 新起一行 -->
                                 <tr>
                                     <td>
-                                        <!-- <input type="checkbox" name="" class="chk"> -->
                                         <div class="checkbox checkbox-info checkbox-inline checkbox-single">
-                                            <input id="talentCheckbox2" type="checkbox">
-                                            <label for="talentCheckbox2"></label>
+                                            <input id="checkbox_a3" type="checkbox">
+                                            <label for="checkbox_a3"></label>
                                         </div>
                                     </td>
                                     <td class="text-blue">肖允瀚</td>
@@ -786,7 +789,7 @@
 								            <li class="wx-new"><a href=""><span class="wx-span1" style="color: #999999;">好多字说没就没了</span><span class="wx-span2" style="color: #999999;">恩，是啊，说没就没了</span></a></li>
 								            <li class="wx-new"><a href=""><span class="wx-span1" style="color: #999999;">好多字说没就没了</span><span class="wx-span2" style="color: #999999;">恩，是啊，说没就没了</span></a></li>
 								            <li class="wx-new"><a href=""><span class="wx-span1" style="color: #999999;">好多字说没就没了</span><span class="wx-span2" style="color: #999999;">恩，是啊，说没就没了</span></a></li>
-								            <li class=" wx-new tc"><a href="#"><span class="wx-span1" style="color: #999999;">个人魅力</span></a></li>
+								            <li class=" wx-new tc"><a href="#"><span class="wx-span1">个人魅力卡</span>个人魅力</span></a></li>
 						                </ul>
 						                
 						                <div class="wx-a">
@@ -831,10 +834,9 @@
                         		<!-- 新起一行 -->
                                 <tr>
                                     <td>
-                                        <!-- <input type="checkbox" name="" class="chk"> -->
                                         <div class="checkbox checkbox-info checkbox-inline checkbox-single">
-                                            <input id="talentCheckbox2" type="checkbox">
-                                            <label for="talentCheckbox2"></label>
+                                            <input id="checkbox_a4" type="checkbox">
+                                            <label for="checkbox_a4"></label>
                                         </div>
                                     </td>
                                     <td class="text-blue">肖允瀚</td>
@@ -859,7 +861,7 @@
 								            <li class="wx-new"><a href=""><span class="wx-span1" style="color: #999999;">好多字说没就没了</span><span class="wx-span2" style="color: #999999;">恩，是啊，说没就没了</span></a></li>
 								            <li class="wx-new"><a href=""><span class="wx-span1" style="color: #999999;">好多字说没就没了</span><span class="wx-span2" style="color: #999999;">恩，是啊，说没就没了</span></a></li>
 								            <li class="wx-new"><a href=""><span class="wx-span1" style="color: #999999;">好多字说没就没了</span><span class="wx-span2" style="color: #999999;">恩，是啊，说没就没了</span></a></li>
-								            <li class=" wx-new tc"><a href="#"><span class="wx-span1" style="color: #999999;">个人魅力</span></a></li>
+								            <li class=" wx-new tc"><a href="#"><span class="wx-span1">个人魅力卡</span>个人魅力</span></a></li>
 						                </ul>
 						                
 						                <div class="wx-a">
@@ -904,10 +906,9 @@
                         		<!-- 新起一行 -->
                                 <tr>
                                     <td>
-                                        <!-- <input type="checkbox" name="" class="chk"> -->
                                         <div class="checkbox checkbox-info checkbox-inline checkbox-single">
-                                            <input id="talentCheckbox2" type="checkbox">
-                                            <label for="talentCheckbox2"></label>
+                                            <input id="checkbox_a5" type="checkbox">
+                                            <label for="checkbox_a5"></label>
                                         </div>
                                     </td>
                                     <td class="text-blue">肖允瀚</td>
@@ -932,7 +933,7 @@
 								            <li class="wx-new"><a href=""><span class="wx-span1" style="color: #999999;">好多字说没就没了</span><span class="wx-span2" style="color: #999999;">恩，是啊，说没就没了</span></a></li>
 								            <li class="wx-new"><a href=""><span class="wx-span1" style="color: #999999;">好多字说没就没了</span><span class="wx-span2" style="color: #999999;">恩，是啊，说没就没了</span></a></li>
 								            <li class="wx-new"><a href=""><span class="wx-span1" style="color: #999999;">好多字说没就没了</span><span class="wx-span2" style="color: #999999;">恩，是啊，说没就没了</span></a></li>
-								            <li class=" wx-new tc"><a href="#"><span class="wx-span1" style="color: #999999;">个人魅力</span></a></li>
+								            <li class=" wx-new tc"><a href="#"><span class="wx-span1">个人魅力卡</span>个人魅力</span></a></li>
 						                </ul>
 						                
 						                <div class="wx-a">
@@ -977,10 +978,9 @@
                         		<!-- 新起一行 -->
                                 <tr>
                                     <td>
-                                        <!-- <input type="checkbox" name="" class="chk"> -->
                                         <div class="checkbox checkbox-info checkbox-inline checkbox-single">
-                                            <input id="talentCheckbox2" type="checkbox">
-                                            <label for="talentCheckbox2"></label>
+                                            <input id="checkbox_a6" type="checkbox">
+                                            <label for="checkbox_a6"></label>
                                         </div>
                                     </td>
                                     <td class="text-blue">肖允瀚</td>
@@ -1005,7 +1005,7 @@
 								            <li class="wx-new"><a href=""><span class="wx-span1" style="color: #999999;">好多字说没就没了</span><span class="wx-span2" style="color: #999999;">恩，是啊，说没就没了</span></a></li>
 								            <li class="wx-new"><a href=""><span class="wx-span1" style="color: #999999;">好多字说没就没了</span><span class="wx-span2" style="color: #999999;">恩，是啊，说没就没了</span></a></li>
 								            <li class="wx-new"><a href=""><span class="wx-span1" style="color: #999999;">好多字说没就没了</span><span class="wx-span2" style="color: #999999;">恩，是啊，说没就没了</span></a></li>
-								            <li class=" wx-new tc"><a href="#"><span class="wx-span1" style="color: #999999;">个人魅力</span></a></li>
+								            <li class=" wx-new tc"><a href="#"><span class="wx-span1">个人魅力卡</span>个人魅力</span></a></li>
 						                </ul>
 						                
 						                <div class="wx-a">
@@ -1048,8 +1048,8 @@
                                 <tr>
                                     <td>
                                         <div class="checkbox checkbox-info checkbox-inline checkbox-single">
-                                            <input id="talentCheckbox2" type="checkbox">
-                                            <label for="talentCheckbox2"></label>
+                                            <input id="checkbox_a7" type="checkbox">
+                                            <label for="checkbox_a7"></label>
                                         </div>
                                     </td>
                                     <td class="text-blue">肖允瀚</td>
@@ -1074,7 +1074,7 @@
 								            <li class="wx-new"><a href=""><span class="wx-span1" style="color: #999999;">好多字说没就没了</span><span class="wx-span2" style="color: #999999;">恩，是啊，说没就没了</span></a></li>
 								            <li class="wx-new"><a href=""><span class="wx-span1" style="color: #999999;">好多字说没就没了</span><span class="wx-span2" style="color: #999999;">恩，是啊，说没就没了</span></a></li>
 								            <li class="wx-new"><a href=""><span class="wx-span1" style="color: #999999;">好多字说没就没了</span><span class="wx-span2" style="color: #999999;">恩，是啊，说没就没了</span></a></li>
-								            <li class=" wx-new tc"><a href="#"><span class="wx-span1" style="color: #999999;">个人魅力</span></a></li>
+								            <li class=" wx-new tc"><a href="#"><span class="wx-span1">个人魅力卡</span>个人魅力</span></a></li>
 						                </ul>
 						                
 						                <div class="wx-a">
@@ -1116,10 +1116,9 @@
                         		<!-- 新起一行 -->
                                 <tr>
                                     <td>
-                                        <!-- <input type="checkbox" name="" class="chk"> -->
                                         <div class="checkbox checkbox-info checkbox-inline checkbox-single">
-                                            <input id="talentCheckbox2" type="checkbox">
-                                            <label for="talentCheckbox2"></label>
+                                            <input id="checkbox_a8" type="checkbox">
+                                            <label for="checkbox_a8"></label>
                                         </div>
                                     </td>
                                     <td class="text-blue">肖允瀚</td>
@@ -1144,7 +1143,7 @@
 								            <li class="wx-new"><a href=""><span class="wx-span1" style="color: #999999;">好多字说没就没了</span><span class="wx-span2" style="color: #999999;">恩，是啊，说没就没了</span></a></li>
 								            <li class="wx-new"><a href=""><span class="wx-span1" style="color: #999999;">好多字说没就没了</span><span class="wx-span2" style="color: #999999;">恩，是啊，说没就没了</span></a></li>
 								            <li class="wx-new"><a href=""><span class="wx-span1" style="color: #999999;">好多字说没就没了</span><span class="wx-span2" style="color: #999999;">恩，是啊，说没就没了</span></a></li>
-								            <li class=" wx-new tc"><a href="#"><span class="wx-span1" style="color: #999999;">个人魅力</span></a></li>
+								            <li class=" wx-new tc"><a href="#"><span class="wx-span1">个人魅力卡</span>个人魅力</span></a></li>
 						                </ul>
 						                
 						                <div class="wx-a">
@@ -1186,10 +1185,9 @@
                         		<!-- 新起一行 -->
                                 <tr>
                                     <td>
-                                        <!-- <input type="checkbox" name="" class="chk"> -->
                                         <div class="checkbox checkbox-info checkbox-inline checkbox-single">
-                                            <input id="talentCheckbox2" type="checkbox">
-                                            <label for="talentCheckbox2"></label>
+                                            <input id="checkbox_a9" type="checkbox">
+                                            <label for="checkbox_a9"></label>
                                         </div>
                                     </td>
                                     <td class="text-blue">肖允瀚</td>
@@ -1214,7 +1212,7 @@
 								            <li class="wx-new"><a href=""><span class="wx-span1" style="color: #999999;">好多字说没就没了</span><span class="wx-span2" style="color: #999999;">恩，是啊，说没就没了</span></a></li>
 								            <li class="wx-new"><a href=""><span class="wx-span1" style="color: #999999;">好多字说没就没了</span><span class="wx-span2" style="color: #999999;">恩，是啊，说没就没了</span></a></li>
 								            <li class="wx-new"><a href=""><span class="wx-span1" style="color: #999999;">好多字说没就没了</span><span class="wx-span2" style="color: #999999;">恩，是啊，说没就没了</span></a></li>
-								            <li class=" wx-new tc"><a href="#"><span class="wx-span1" style="color: #999999;">个人魅力</span></a></li>
+								            <li class=" wx-new tc"><a href="#"><span class="wx-span1">个人魅力卡</span>个人魅力</span></a></li>
 						                </ul>
 						                
 						                <div class="wx-a">

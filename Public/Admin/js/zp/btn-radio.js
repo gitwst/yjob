@@ -73,15 +73,6 @@ $(".tc").click(function(){
 
 
 
-
-
-
-
-
-
-
-
-
  $("#example-search-BD td i.fa").off();
  $("#example-search-BD td i.fa").on('click',function(){
      var curTr = $(this).parents('tr')[0];
@@ -95,14 +86,9 @@ $(".tc").click(function(){
      // 
      if ( curTr.data("curImg") == "plus" )
      {
-         /* This row is already open - close it */
          $(this).removeClass("fa-plus-circle");
          $(this).addClass("fa-minus-circle");
          curTr.data("curImg","minus");
-         // var addTrText = "<tr>";
-         // addTrText += "<td colspan='10'>";
-         // addTrText += "asaaaaaaaa";
-         // addTrText +="</td></tr>"
          var  addTrText = '<tr class="newTr">';
               addTrText += '<td colspan="11"><ul class="unstyled inline">';
 			  addTrText += '<li>&nbsp;&nbsp;</li>'; 
@@ -115,7 +101,6 @@ $(".tc").click(function(){
      }
      else
      {
-         /* Open this row */
          $(this).removeClass("fa-minus-circle");
          $(this).addClass("fa-plus-circle");
          curTr.data("curImg","plus");

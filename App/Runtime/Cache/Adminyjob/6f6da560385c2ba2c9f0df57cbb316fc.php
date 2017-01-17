@@ -296,30 +296,7 @@
 			        </span>
                 </a>
             </li>
-            <li class="sub-menu">
-                <a href="javascript:;">
-                    <i class="fa fa-briefcase">
-                    </i>
-                    <span>
-			          企业管理
-			        </span>
-                    <span class="label label-success span-sidebar">
-			        1
-			        </span>
-                </a>
-                <ul class="sub">
-                    <!--<li>-->
-                    <!--<a href="job_listings.html">-->
-                    <!--职位列表-->
-                    <!--</a>-->
-                    <!--</li>-->
-                    <li>
-                        <a href="<?php echo U('Business/enterprise_certification');?>">
-                            企业认证
-                        </a>
-                    </li>
-                </ul>
-            </li>
+            
             <li class="sub-menu">
                 <a href="javascript:;">
                     <i class="fa fa-briefcase">
@@ -342,11 +319,8 @@
                             职位修改
                         </a>
                     </li>-->
-                    <li>
-                        <a href="<?php echo U('Position/job_class');?>">
-                            职位分类
-                        </a>
-                    </li>
+                    
+            
                 </ul>
             </li>
             <li class="sub-menu">
@@ -379,6 +353,31 @@
                     <li>
                         <a href="<?php echo U('Member/bd_lib');?>">
                             BD列表
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li class="sub-menu">
+                <a href="javascript:;">
+                    <i class="fa fa-briefcase">
+                    </i>
+                    <span>
+			          企业管理
+			        </span>
+                    <span class="label label-success span-sidebar">
+			        1
+			        </span>
+                </a>
+                <ul class="sub">
+                    <!--<li>-->
+                    <!--<a href="job_listings.html">-->
+                    <!--职位列表-->
+                    <!--</a>-->
+                    <!--</li>-->
+                    <li>
+                        <a href="<?php echo U('Business/enterprise_certification');?>">
+                            企业认证
                         </a>
                     </li>
                 </ul>
@@ -558,6 +557,13 @@
                     <!--微信公众号设置-->
                     <!--</a>-->
                     <!--</li>-->
+                    
+                    <li>
+                        <a href="<?php echo U('System/job_class');?>">
+                            分类管理
+                        </a>
+                    </li>
+                    
                     <li>
                         <a href="<?php echo U('System/substation_management');?>">
                             分站管理
@@ -621,10 +627,9 @@
                                 <!-- 新起一行 -->
                                 <tr>
                                     <td>
-                                        <!-- <input type="checkbox" name="" class="chk"> -->
                                         <div class="checkbox checkbox-info checkbox-inline checkbox-single">
-                                            <input id="inlineCheckbox1" type="checkbox">
-                                            <label for="inlineCheckbox1"></label>
+                                            <input id="checkbox_a1" type="checkbox">
+                                            <label for="checkbox_a1"></label>
                                         </div>
                                     </td>
                                     <td class="text-blue">肖允瀚</td>
@@ -687,10 +692,9 @@
                         		<!-- 新起一行 -->
                                 <tr>
                                     <td>
-                                        <!-- <input type="checkbox" name="" class="chk"> -->
                                         <div class="checkbox checkbox-info checkbox-inline checkbox-single">
-                                            <input id="inlineCheckbox1" type="checkbox">
-                                            <label for="inlineCheckbox1"></label>
+                                            <input id="checkbox_a2" type="checkbox">
+                                            <label for="checkbox_a2"></label>
                                         </div>
                                     </td>
                                     <td class="text-blue">肖允瀚</td>
@@ -753,10 +757,9 @@
                         		<!-- 新起一行 -->
                                 <tr>
                                     <td>
-                                        <!-- <input type="checkbox" name="" class="chk"> -->
                                         <div class="checkbox checkbox-info checkbox-inline checkbox-single">
-                                            <input id="inlineCheckbox1" type="checkbox">
-                                            <label for="inlineCheckbox1"></label>
+                                            <input id="checkbox_a3" type="checkbox">
+                                            <label for="checkbox_a3"></label>
                                         </div>
                                     </td>
                                     <td class="text-blue">肖允瀚</td>
@@ -819,10 +822,9 @@
                         		<!-- 新起一行 -->
                                 <tr>
                                     <td>
-                                        <!-- <input type="checkbox" name="" class="chk"> -->
                                         <div class="checkbox checkbox-info checkbox-inline checkbox-single">
-                                            <input id="inlineCheckbox1" type="checkbox">
-                                            <label for="inlineCheckbox1"></label>
+                                            <input id="checkbox_a4" type="checkbox">
+                                            <label for="checkbox_a4"></label>
                                         </div>
                                     </td>
                                     <td class="text-blue">肖允瀚</td>
@@ -885,10 +887,9 @@
                         		<!-- 新起一行 -->
                                 <tr>
                                     <td>
-                                        <!-- <input type="checkbox" name="" class="chk"> -->
                                         <div class="checkbox checkbox-info checkbox-inline checkbox-single">
-                                            <input id="inlineCheckbox1" type="checkbox">
-                                            <label for="inlineCheckbox1"></label>
+                                            <input id="checkbox_a5" type="checkbox">
+                                            <label for="checkbox_a5"></label>
                                         </div>
                                     </td>
                                     <td class="text-blue">肖允瀚</td>
@@ -951,10 +952,9 @@
                         		<!-- 新起一行 -->
                                 <tr>
                                     <td>
-                                        <!-- <input type="checkbox" name="" class="chk"> -->
                                         <div class="checkbox checkbox-info checkbox-inline checkbox-single">
-                                            <input id="inlineCheckbox1" type="checkbox">
-                                            <label for="inlineCheckbox1"></label>
+                                            <input id="checkbox_a6" type="checkbox">
+                                            <label for="checkbox_a6"></label>
                                         </div>
                                     </td>
                                     <td class="text-blue">肖允瀚</td>
@@ -1017,10 +1017,9 @@
                         		<!-- 新起一行 -->
                                 <tr>
                                     <td>
-                                        <!-- <input type="checkbox" name="" class="chk"> -->
                                         <div class="checkbox checkbox-info checkbox-inline checkbox-single">
-                                            <input id="inlineCheckbox1" type="checkbox">
-                                            <label for="inlineCheckbox1"></label>
+                                            <input id="checkbox_a7" type="checkbox">
+                                            <label for="checkbox_a7"></label>
                                         </div>
                                     </td>
                                     <td class="text-blue">肖允瀚</td>
@@ -1083,10 +1082,9 @@
                         		<!-- 新起一行 -->
                                 <tr>
                                     <td>
-                                        <!-- <input type="checkbox" name="" class="chk"> -->
                                         <div class="checkbox checkbox-info checkbox-inline checkbox-single">
-                                            <input id="inlineCheckbox1" type="checkbox">
-                                            <label for="inlineCheckbox1"></label>
+                                            <input id="checkbox_a8" type="checkbox">
+                                            <label for="checkbox_a8"></label>
                                         </div>
                                     </td>
                                     <td class="text-blue">肖允瀚</td>
@@ -1172,8 +1170,6 @@
                                     导出
                                 </button>
                             </div>
-
-
 
 
                             <ul class="pagination success pull-right ">

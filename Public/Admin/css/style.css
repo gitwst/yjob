@@ -6680,11 +6680,11 @@ a.guest-on i {
 .newTr{
 	display: none;
 }
+/*wx*/
 .wx-a{
 	width: 605px;
 	height: 329px;
 	margin: 0 auto;
-	/*border: 1px solid darkgray;*/
 	border-radius: 4px;
 	background: #ffffff;
 	position: relative;
@@ -6732,6 +6732,7 @@ a.guest-on i {
 .wx-center .wx-ul .wx-li .wx-right{
 	color: #333333;
 }
+
 
 /*.wx-a .wx-body ul li{
 	height: 38px;

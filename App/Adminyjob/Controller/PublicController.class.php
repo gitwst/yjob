@@ -2,12 +2,12 @@
 namespace Adminyjob\Controller;
 use Think\Controller;
 class PublicController extends Controller{
-//  public function _initialize(){
-//  	$user = isset($_SESSION['admin_username']) ? $_SESSION['admin_username'] : null;
-//  	if(!$user){
-//  		$this->error('未登录，请登录',U('Login/login'),3);
-//  	}
-//  }
+    public function _initialize(){
+    	$user = isset($_SESSION['admin_username']) ? $_SESSION['admin_username'] : null;
+    	if(!$user){
+    		$this->error('未登录，请登录',U('Login/login'),3);
+    	}
+    }
 	public function post_curl_json($url){
 		$ch = curl_init();
 		curl_setopt($ch,CURLOPT_URL,$url);
